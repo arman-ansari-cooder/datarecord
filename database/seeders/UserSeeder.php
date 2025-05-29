@@ -19,13 +19,11 @@ class UserSeeder extends Seeder
             'name' => 'Admin User',
             'email' => 'phuyalbinod25@gmail.com',
             'password' => Hash::make('password123'), 
-           
-            // securely hash password
+            'status' => 'active', // Only if you added the 'status' column
+
+        
           
         ]);
-
-        // Optionally create a few random users
-        User::factory()->count(10)->create(); // if you have a factory
     }
     }
 
