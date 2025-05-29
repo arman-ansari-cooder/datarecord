@@ -10,6 +10,6 @@ class Insert extends Model
 
     protected $fillable = [
         'custom_id', 'date', 'fullname', 'address', 'photo',
-        'total_price', 'room_no', 'status'
+        'total_price', 'room_no', 'status','food_name'
     ];
 }

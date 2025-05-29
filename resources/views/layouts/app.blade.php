@@ -34,12 +34,12 @@
                     </svg>
                     Reports
                 </a>
-                <a href="#" class="flex items-center gap-2 py-2 px-4 rounded-lg text-gray-700 hover:bg-purple-100 transition">
+                <!-- <a href="#" class="flex items-center gap-2 py-2 px-4 rounded-lg text-gray-700 hover:bg-purple-100 transition">
                     <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m0 14v1m8.5-8.5l-.7.7M4.2 4.2l.7.7m12 12l.7.7M4.2 19.8l.7-.7M21 12h1M2 12H1"></path>
                     </svg>
                     Settings
-                </a>
+                </a> -->
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                    class="flex items-center gap-2 py-2 px-4 rounded-lg text-red-600 hover:bg-red-100 transition mt-6">

@@ -44,7 +44,7 @@
             </div>
 
             <div class="flex justify-between items-center text-sm">
-                <a href="#" class="text-purple-600 hover:underline">
+                <a href="{{ route('password.request') }}" class="text-purple-600 hover:underline">
                     Forgot Password?
                 </a>
             </div>
@@ -57,10 +57,10 @@
             </div>
         </form>
 
-        <p class="text-sm text-center mt-6 text-gray-600 animate__animated animate__fadeIn animate__delay-2s">
+        <!-- <p class="text-sm text-center mt-6 text-gray-600 animate__animated animate__fadeIn animate__delay-2s">
             Don't have an account? 
             <a href="{{ route('register') }}" class="text-purple-600 font-semibold hover:underline">Register</a>
-        </p>
+        </p> -->
     </div>
 
 </body>

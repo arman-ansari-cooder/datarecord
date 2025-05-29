@@ -12,15 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('insert', function (Blueprint $table) {
-            $table->id();
-             $table->string('custom_id'); // Your "ID" field
+      $table->id();
+     $table->string('custom_id')->nullable();
     $table->date('date');
     $table->string('fullname');
     $table->string('address');
-    $table->string('photo');
+    $table->string('photo')->nullable();
     $table->decimal('total_price', 10, 2);
     $table->string('room_no');
     $table->enum('status', ['active', 'inactive']);
+          $table->longText('food_name')->nullable();
+
 
             $table->timestamps();
         });

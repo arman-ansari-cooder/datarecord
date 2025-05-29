@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Insert;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -52,7 +53,11 @@ class AuthController extends Controller
 
     public function dashboard()
     {
-        return view('dashboard');
+       $totalUsers = User::count();
+        $activeUsers = Insert::where('status', 'active')->count();
+        $inactiveUsers = Insert::where('status', 'inactive')->count();
+
+        return view('dashboard', compact('totalUsers', 'activeUsers', 'inactiveUsers'));
     }
 
     public function logout(Request $request)
